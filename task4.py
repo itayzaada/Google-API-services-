@@ -14,12 +14,13 @@ def  reader (file):
     for word in fhand :
         lst.append(word.strip())
     return lst
-
-
 cities=(reader('dests.txt'))
-api_key='AIzaSyC5rG6QFzHk6BsFHmiKcU-XiuI_chdkQno'
-serviceurl='https://maps.googleapis.com/maps/api/distancematrix/json?'
 
+api_key=#I added the API In File in Moodel System ##
+
+
+
+serviceurl='https://maps.googleapis.com/maps/api/distancematrix/json?'
 parms = dict()
 parms['origins']='תל אביב'
 parms['key'] = api_key
