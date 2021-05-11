@@ -7,6 +7,7 @@ Created on Thu Apr 29 17:52:11 2021
 import json
 import urllib
 import requests
+file=input("Enter File Name : ")
 def  reader (file):
     lst=[]
     fhand = open(file,'r',encoding='UTF-8')
@@ -14,7 +15,7 @@ def  reader (file):
     for word in fhand :
         lst.append(word.strip())
     return lst
-cities=(reader('dests.txt'))
+cities=(reader(file))
 
 api_key=#I added the API In File in Moodel System ##
 
